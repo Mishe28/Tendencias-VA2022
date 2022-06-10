@@ -8,6 +8,7 @@ AppDataSource.initialize().then(async () => {
     user.firstName = "Carolina"
     user.lastName = "Yuqui"
     user.age = 20
+    user.address = "Calle Loja y Calle H"
     await AppDataSource.manager.save(user)
     console.log("Saved a new user with id: " + user.id)
 
